@@ -4,30 +4,20 @@ import java.util.Arrays;
 
 public class Q7UniquePair {
 	
-//	public static void UniquePairAddi(int a[],int sum)
-//	{
-//		
-//		int low=0;
-//		int high=a.length-1;
-//		
-//		while(low<high)
-//		{
-//			if(a[low]+a[high]>sum)
-//			{
-//				high--;
-//			}
-//			else if(a[low]+a[high]<sum)
-//			{
-//				low++;
-//			}
-//			else if(a[low]+a[high]==sum)
-//			{
-//				System.out.println(sum);
-//				low++;
-//				high--;
-//			}
-//		}
-//	}
+	public static void UniquePairAddi(int a[],int sum)
+	{
+		
+		for(int i=0;i<a.length;i++)
+		{
+			for(int j=i+1;j<a.length;j++)
+			{
+				if(a[i]+a[j]==sum)
+				{
+					System.out.println(a[i]+" "+a[j]);
+				}
+			}
+		}
+	}
 
 	public static void main(String[] args) {
 		// To Find unique Pair Of Integers in Array whose Sum is Given Number Given array : [2, 4, 3, 5, 6, -2, 4, 7, 8, 9] 
